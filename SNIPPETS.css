@@ -1,0 +1,455 @@
+/* ==============================================
+   SNIPPETS ÚTILES PARA PERSONALIZACIÓN
+   ============================================== */
+
+/* ===== 1. CAMBIAR ESQUEMA DE COLORES ===== */
+
+/* Azul Clásico (Actual) */
+:root {
+    --primary-color: #00d4ff;
+    --secondary-color: #0099ff;
+}
+
+/* Rojo Deportivo */
+:root {
+    --primary-color: #ff3366;
+    --secondary-color: #cc0033;
+}
+
+/* Verde Eco */
+:root {
+    --primary-color: #00ff88;
+    --secondary-color: #00cc66;
+}
+
+/* Púrpura Premium */
+:root {
+    --primary-color: #9b59b6;
+    --secondary-color: #8e44ad;
+}
+
+/* Naranja Energético */
+:root {
+    --primary-color: #ff6b35;
+    --secondary-color: #ff4500;
+}
+
+/* ===== 2. AGREGAR NUEVO SERVICIO ===== */
+
+/*
+Copia este código en la sección de servicios:
+
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="bi bi-ICONO-AQUI"></i>
+        </div>
+        <h4>Nombre del Servicio</h4>
+        <p>Descripción del servicio que ofreces a tus clientes.</p>
+        <ul class="service-list">
+            <li><i class="bi bi-check-circle-fill"></i> Característica 1</li>
+            <li><i class="bi bi-check-circle-fill"></i> Característica 2</li>
+            <li><i class="bi bi-check-circle-fill"></i> Característica 3</li>
+        </ul>
+    </div>
+</div>
+
+Iconos disponibles en: https://icons.getbootstrap.com/
+*/
+
+/* ===== 3. AGREGAR NUEVO PAQUETE ===== */
+
+/*
+<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+    <div class="package-card">
+        <div class="package-header">
+            <h4>VIP</h4>
+            <div class="package-price">
+                <span class="currency">$</span>
+                <span class="amount">850</span>
+            </div>
+        </div>
+        <ul class="package-features">
+            <li><i class="bi bi-check-circle-fill"></i> Todo incluido</li>
+            <li><i class="bi bi-check-circle-fill"></i> Servicio premium</li>
+            <li><i class="bi bi-check-circle-fill"></i> Garantía extendida</li>
+        </ul>
+        <button class="btn btn-outline-primary w-100">Seleccionar</button>
+    </div>
+</div>
+*/
+
+/* ===== 4. AGREGAR TESTIMONIO ===== */
+
+/*
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <div class="testimonial-card">
+        <div class="testimonial-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+        </div>
+        <p class="testimonial-text">"Tu testimonio aquí..."</p>
+        <div class="testimonial-author">
+            <img src="URL_IMAGEN" alt="Cliente">
+            <div>
+                <h6>Nombre del Cliente</h6>
+                <small class="text-muted">Descripción</small>
+            </div>
+        </div>
+    </div>
+</div>
+*/
+
+/* ===== 5. AGREGAR IMAGEN A GALERÍA ===== */
+
+/*
+<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+    <div class="gallery-item">
+        <img src="URL_IMAGEN" alt="Descripción">
+        <div class="gallery-overlay">
+            <h5>Título</h5>
+            <p>Descripción corta</p>
+        </div>
+    </div>
+</div>
+*/
+
+/* ===== 6. BOTÓN CON GRADIENTE PERSONALIZADO ===== */
+
+.btn-custom {
+    background: linear-gradient(135deg, #FF0080 0%, #FF8C00 100%);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 0, 128, 0.3);
+}
+
+.btn-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 0, 128, 0.4);
+}
+
+/* ===== 7. TARJETA CON EFECTO GLASSMORPHISM ===== */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* ===== 8. ANIMACIÓN DE ENTRADA PERSONALIZADA ===== */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+/* ===== 9. BADGE CON PULSACIÓN ===== */
+
+.badge-pulse {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ff3366;
+    color: white;
+    border-radius: 50px;
+    animation: pulse-badge 2s infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 51, 102, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(255, 51, 102, 0);
+    }
+}
+
+/* ===== 10. TOOLTIP PERSONALIZADO ===== */
+
+[data-tooltip] {
+    position: relative;
+    cursor: help;
+}
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+}
+
+/* ===== 11. SECCIÓN CON PATRÓN DE FONDO ===== */
+
+.pattern-section {
+    background-color: #f8f9fa;
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(0,212,255,.03) 35px, rgba(0,212,255,.03) 70px);
+}
+
+/* ===== 12. CONTADOR ANIMADO PERSONALIZADO ===== */
+
+.custom-counter {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== 13. CARD CON FLIP 3D ===== */
+
+.flip-card {
+    perspective: 1000px;
+    height: 300px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* ===== 14. PROGRESS BAR ANIMADO ===== */
+
+.progress-bar-custom {
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00d4ff, #0099ff);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transition: width 1s ease;
+}
+
+/* ===== 15. STICKY CTA BUTTON (Mobile) ===== */
+
+@media (max-width: 768px) {
+    .sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+        padding: 15px;
+        text-align: center;
+        z-index: 999;
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .sticky-cta .btn {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* ===== 16. MODAL PERSONALIZADO ===== */
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal.active {
+    display: flex;
+}
+
+.modal-content-custom {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ===== 17. PRECIOS CON DESCUENTO ===== */
+
+.price-original {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.price-discount {
+    color: #ff3366;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff3366;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* ===== 18. TIMELINE VERTICAL ===== */
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+/* ===== 19. RIBBON BANNER ===== */
+
+.ribbon {
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    background: #ff3366;
+    color: white;
+    padding: 8px 20px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid #cc0033;
+    border-bottom: 10px solid transparent;
+}
+
+/* ===== 20. STARS RATING INTERACTIVO ===== */
+
+.star-rating {
+    font-size: 2rem;
+    color: #ddd;
+}
+
+.star-rating .star {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating .star:hover,
+.star-rating .star.active {
+    color: #ffc107;
+}
+
+/* ==============================================
+   NOTAS:
+   - Copia el snippet que necesites
+   - Pégalo en tu styles.css o en el HTML
+   - Personaliza los colores y medidas
+   - Prueba en diferentes dispositivos
+   ============================================== */

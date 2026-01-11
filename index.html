@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RapidoBrilloso - El mejor servicio de lavado de autos. Limpieza profesional, rápida y eficiente.">
+    <title>RapidoBrilloso | Car Wash Premium</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="logo_azul_mejorado_2.jpeg" alt="RapidoBrilloso Logo" style="height: 50px; margin-right: 10px; border-radius: 5px;">
+                <span class="brand-text">Rapido y Brilloso</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paquetes">Nuestros Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#reservar" class="btn btn-primary ms-lg-3">Reservar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <img src="logo_azul_mejorado_2.jpeg" alt="RapidoBrilloso Logo" class="img-fluid mb-4" style="max-height: 150px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);" data-aos="fade-down">
+                    <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">
+                        Tu Auto Merece el Mejor <span class="text-primary">Cuidado</span>
+                    </h1>
+                    <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">
+                        Lavado profesional de autos con productos premium y atención personalizada. 
+                        ¡Deja tu vehículo reluciente en minutos!
+                    </p>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <a href="#paquetes" class="btn btn-primary btn-lg me-3 pulse-btn">
+                            <i class="bi bi-calendar-check"></i> Nuestros Servicios
+                        </a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-telephone"></i> Contactar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#features" class="scroll-down">
+            <i class="bi bi-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <h5>Servicio Rápido</h5>
+                        <p>Tu auto listo en 30 minutos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5>100% Ecológico</h5>
+                        <p>Productos biodegradables</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h5>Personal Experto</h5>
+                        <p>Profesionales certificados</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5>Satisfacción Garantizada</h5>
+                        <p>O devolvemos tu dinero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">Nuestras <span class="text-primary">Especialidades</span></h2>
+                <p class="lead text-muted">Todo lo que tu auto necesita en un solo lugar</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-water"></i>
+                        </div>
+                        <h4>Lavado & Limpieza Integral</h4>
+                        <p>Servicio completo de limpieza exterior e inferior para tu vehículo.</p>
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Limpieza vehícular completa</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Lavado de chasis básico</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Lavado con ducha de grafito</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </div>
+                        <h4>Motor & Tratamiento</h4>
+                        <p>Cuidado especializado para el corazón de tu auto y prevención de óxido.</p>
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Lavado de motor a vapor</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Tratamiento anti óxido</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Descontaminado férrico</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-person-check-fill"></i>
+                        </div>
+                        <h4>Interior & Tapicería</h4>
+                        <p>Renovación total del habitáculo, asientos y plásticos internos.</p>
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Lavado de tapiz</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Limpieza cuero + hidratación</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Sanitizado interiores</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4>Carrocería & Pintura</h4>
+                        <p>Recupera el brillo original y elimina imperfecciones de la pintura.</p>
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Descontaminado carrocería</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Pulido de carrocería</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Limpieza de llantas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-sunglasses"></i>
+                        </div>
+                        <h4>Vidrios & Faros</h4>
+                        <p>Mejora la visibilidad y estética con tratamientos especializados.</p>
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Pulido de faros</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Descontaminado de vidrios</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Sellado hidrofóbico</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Protección Avanzada</h4>
+                        <p>Tecnología de punta para proteger tu inversión por más tiempo.</p>
+                        <ul class="service-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Sellado de neumáticos</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Graphene (6-12 meses)</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Cerámico (1-3 años)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="paquetes" class="packages-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">Nuestros <span class="text-primary">Servicios</span></h2>
+                <p class="lead text-muted">Elige el plan perfecto para tu vehículo</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4>Básico</h4>
+                            <div class="package-price">
+                                <span class="currency">S/</span>
+                                <span class="amount">30</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Lavado exterior</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Secado manual</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Aspirado básico</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Limpieza de vidrios</li>
+                            <li class="text-muted"><i class="bi bi-x-circle"></i> Brillo de llantas</li>
+                            <li class="text-muted"><i class="bi bi-x-circle"></i> Aromatización</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4>Estándar</h4>
+                            <div class="package-price">
+                                <span class="currency">S/</span>
+                                <span class="amount">60</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Lavado exterior premium</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Secado manual</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Aspirado completo</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Limpieza de vidrios</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Brillo de llantas</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Aromatización</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-card featured">
+                        <div class="package-badge">Más Popular</div>
+                        <div class="package-header">
+                            <h4>Premium</h4>
+                            <div class="package-price">
+                                <span class="currency">S/</span>
+                                <span class="amount">120</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Lavado completo</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Limpieza interior profunda</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Pulido de pintura</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Encerado</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Brillo de llantas premium</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Aromatización especial</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h4>Elite</h4>
+                            <div class="package-price">
+                                <span class="currency">S/</span>
+                                <span class="amount">250</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Todo del Premium</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Detallado completo</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Limpieza de motor</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Protección cerámica</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Tratamiento de cuero</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Garantía 30 días</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">Nuestro <span class="text-primary">Trabajo</span></h2>
+                <p class="lead text-muted">Resultados que hablan por sí mismos</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="gallery-item">
+                        <img src="1.jpeg" alt="Car Wash 1">
+                        <div class="gallery-overlay">
+                            <h5>Lavado Exterior</h5>
+                            <p>Resultado impecable</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item">
+                        <img src="2.jpeg" alt="Car Wash 2">
+                        <div class="gallery-overlay">
+                            <h5>Detallado Premium</h5>
+                            <p>Brillo perfecto</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <img src="3.jpeg" alt="Car Wash 3">
+                        <div class="gallery-overlay">
+                            <h5>Interior Impecable</h5>
+                            <p>Como nuevo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-item">
+                        <img src="4.jpeg" alt="Car Wash 4">
+                        <div class="gallery-overlay">
+                            <h5>Pulido de Pintura</h5>
+                            <p>Protección total</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-item">
+                        <img src="5.jpeg" alt="Car Wash 5">
+                        <div class="gallery-overlay">
+                            <h5>Llantas Brillantes</h5>
+                            <p>Atención al detalle</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gallery-item">
+                        <img src="6.jpeg" alt="Car Wash 6">
+                        <div class="gallery-overlay">
+                            <h5>Servicio Premium</h5>
+                            <p>Satisfacción garantizada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos" class="video-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">Resultados en <span class="text-primary">Video</span></h2>
+                <p class="lead text-muted">Mira la calidad de nuestro trabajo en acción</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="video-card card border-0 shadow-sm h-100">
+                        <div class="ratio ratio-16x9 bg-black rounded-top">
+                             <video controls class="w-100 h-100">
+                                <source src="1.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Proceso Limpieza</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-card card border-0 shadow-sm h-100">
+                        <div class="ratio ratio-16x9 bg-black rounded-top">
+                           <video controls class="w-100 h-100">
+                                <source src="2.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Detallado</h5>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="video-card card border-0 shadow-sm h-100">
+                        <div class="ratio ratio-16x9 bg-black rounded-top">
+                           <video controls class="w-100 h-100">
+                                <source src="3.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Acabado Final</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="video-card card border-0 shadow-sm h-100">
+                        <div class="ratio ratio-16x9 bg-black rounded-top">
+                           <video controls class="w-100 h-100">
+                                <source src="4.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Antes y Después</h5>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="video-card card border-0 shadow-sm h-100">
+                        <div class="ratio ratio-16x9 bg-black rounded-top">
+                            <video controls class="w-100 h-100">
+                                <source src="5.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Cliente Feliz</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">Lo Que Dicen <span class="text-primary">Nuestros Clientes</span></h2>
+                <p class="lead text-muted">Miles de clientes satisfechos</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Excelente servicio! Mi auto quedó impecable, parecía nuevo. El personal es muy amable y profesional. Totalmente recomendado."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+                            <div>
+                                <h6>Carlos Rodríguez</h6>
+                                <small class="text-muted">Cliente frecuente</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"La mejor inversión para mi carro. El detallado premium valió cada peso. El brillo y la limpieza son increíbles. ¡Volveré pronto!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente">
+                            <div>
+                                <h6>María González</h6>
+                                <small class="text-muted">Cliente satisfecha</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Servicio rápido y eficiente. En 30 minutos mi auto estaba listo y reluciente. Los precios son justos para la calidad que ofrecen."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Cliente">
+                            <div>
+                                <h6>Juan Martínez</h6>
+                                <small class="text-muted">Cliente nuevo</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row g-4 text-center text-white">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-item">
+                        <i class="bi bi-people-fill"></i>
+                        <h3 class="counter" data-target="15000">0</h3>
+                        <p>Clientes Felices</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <i class="bi bi-car-front-fill"></i>
+                        <h3 class="counter" data-target="25000">0</h3>
+                        <p>Autos Lavados</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <i class="bi bi-award-fill"></i>
+                        <h3 class="counter" data-target="10">0</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <i class="bi bi-star-fill"></i>
+                        <h3><span class="counter" data-target="5">0</span>/5</h3>
+                        <p>Calificación Promedio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold">¿Listo para <span class="text-primary">Brillar?</span></h2>
+                <p class="lead text-muted">Contáctanos y agenda tu cita hoy mismo</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Información de Contacto</h4>
+                        
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <div>
+                                <h6>Dirección</h6>
+                                <p>Av. Javier Prado Este 1234<br>San Borja, Lima, Perú</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h6>Teléfono</h6>
+                                <p>+51 987 654 321<br>(01) 234-5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <p>info@rapidobrilloso.com.pe<br>contacto@rapidobrilloso.com.pe</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <div>
+                                <h6>Horario</h6>
+                                <p>Lun - Vie: 8:00 AM - 8:00 PM<br>Sáb - Dom: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" placeholder="+51 9..." required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="servicio" class="form-label">Servicio de Interés</label>
+                                    <select class="form-select" id="servicio" required>
+                                        <option value="">Selecciona un servicio</option>
+                                        <option value="basico">Básico - S/ 30</option>
+                                        <option value="estandar">Estándar - S/ 60</option>
+                                        <option value="premium">Premium - S/ 120</option>
+                                        <option value="elite">Elite - S/ 250</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="bi bi-send-fill"></i> Enviar Mensaje
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section id="reservar" class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold text-white mb-3">¿Listo para un Auto Impecable?</h2>
+                    <p class="lead text-white-50">Reserva tu cita ahora y obtén un 15% de descuento en tu primer servicio</p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="#contacto" class="btn btn-light btn-lg">
+                        <i class="bi bi-calendar-check"></i> Reservar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="mb-3"><i class="bi bi-droplet-fill"></i> RapidoBrilloso</h4>
+                    <p class="text-muted">Tu auto merece el mejor cuidado. Ofrecemos servicios profesionales de lavado y detallado con productos premium.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#servicios">Especialidades</a></li>
+                        <li><a href="#paquetes">Nuestros Servicios</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Servicios</h5>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Lavado Exterior</a></li>
+                        <li><a href="#servicios">Lavado Interior</a></li>
+                        <li><a href="#servicios">Detallado Premium</a></li>
+                        <li><a href="#servicios">Motor Limpio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p class="text-muted">Suscríbete para recibir ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Tu email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-send-fill"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-muted">&copy; 2024 RapidoBrilloso. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted me-3">Política de Privacidad</a>
+                    <a href="#" class="text-muted">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51987654321" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
