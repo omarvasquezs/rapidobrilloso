@@ -818,11 +818,28 @@ section {
     }
 }
 
+.hero-logo {
+    max-height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 992px) {
     .hero-section {
-        min-height: 80vh;
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 60px;
         background-attachment: scroll;
+    }
+
+    .navbar-collapse {
+        background: rgba(26, 26, 46, 0.98);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     
     .display-3 {
@@ -840,17 +857,55 @@ section {
 
 @media (max-width: 768px) {
     .hero-section {
-        min-height: 70vh;
+        padding-top: 100px;
+        padding-bottom: 40px;
     }
     
+    .hero-logo {
+        max-height: 100px;
+        margin-bottom: 1rem !important;
+    }
+
     .display-3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .display-4 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+        margin-bottom: 2rem !important;
+    }
+
+    .hero-section .btn {
+        display: block;
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+    }
+
+    .scroll-down {
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .features-section {
+        margin-top: 0;
+        padding-top: 2rem;
     }
     
+    /* Navbar Adjustments */
+    .navbar-brand img {
+        height: 35px !important;
+    }
+    
+    .brand-text {
+        font-size: 1.1rem;
+    }
+
     .feature-icon,
     .service-icon {
         width: 70px;
